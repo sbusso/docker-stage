@@ -9,7 +9,7 @@ eval $CMD
 
 function docker-stage () {
   if [[ -z $1 ]]; then
-    source ~/.docker-env
+    source ~/.docker-stage
   else
     export DOCKER_STAGE=$1
     docker-machine active $1
